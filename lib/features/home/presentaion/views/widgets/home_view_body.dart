@@ -4,6 +4,7 @@ import 'package:gdg_design/features/home/presentaion/views/widgets/home_view_app
 import 'package:gdg_design/features/home/presentaion/views/widgets/home_view_learn_more_container.dart';
 import 'package:gdg_design/features/home/presentaion/views/widgets/home_view_row_buttons.dart';
 import 'package:gdg_design/features/home/presentaion/views/widgets/home_view_search.dart';
+import 'package:gdg_design/features/home/presentaion/views/widgets/home_view_top_doctor.dart';
 
 class HomeViewBody extends StatelessWidget {
   const HomeViewBody({super.key});
@@ -18,7 +19,9 @@ class HomeViewBody extends StatelessWidget {
           12.verticalSpace,
           const HomeViewRowButtons(),
           15.verticalSpace,
-          HomeViewLearnMoreContainer(),
+          const HomeViewLearnMoreContainer(),
+          20.verticalSpace,
+          const HomeViewTopDoctor(),
         ],
       ),
     );
