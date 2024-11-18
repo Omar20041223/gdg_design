@@ -5,9 +5,20 @@ class HomeView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
+    return  Scaffold(
+      bottomNavigationBar: BottomNavigationBar(
+        backgroundColor: Colors.white,
+        selectedItemColor: const Color(0xff199A8E),
+        unselectedItemColor: const Color(0xffADADAD),
+        items: const [
+          BottomNavigationBarItem(icon: Icon(Icons.home_filled), label: ""),
+          BottomNavigationBarItem(icon: Icon(Icons.timelapse_sharp), label: ""),
+          BottomNavigationBarItem(icon: Icon(Icons.calendar_month), label: ""),
+          BottomNavigationBarItem(icon: Icon(Icons.person), label: ""),
+        ],
+      ),
       backgroundColor: Colors.white,
-      body: SafeArea(child: HomeViewBody()),
+      body: const SafeArea(child: HomeViewBody()),
     );
   }
 }

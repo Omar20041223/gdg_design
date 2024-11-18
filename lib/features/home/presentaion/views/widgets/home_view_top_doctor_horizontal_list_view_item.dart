@@ -15,7 +15,7 @@ class HomeViewTopDoctorHorizontalListViewItem extends StatelessWidget {
         border: Border.all(color: const Color(0xffE8F3F1), width: 1.w),
       ),
       padding: EdgeInsets.symmetric(horizontal: 10.w),
-      margin: EdgeInsets.only(left: 15.w),
+      margin: EdgeInsets.only(right: 15.w),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
